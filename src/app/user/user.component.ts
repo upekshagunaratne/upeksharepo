@@ -12,12 +12,12 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 export class UserComponent {
   @Input() avatar!: string;
   @Input() name!: string;
-  selectedUser = DUMMY_USERS[randomIndex];
+  //selectedUser = DUMMY_USERS[randomIndex];
   
-  onSelectUser() {
-    const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-    this.selectedUser=DUMMY_USERS[randomIndex];
-  }
+  //onSelectUser() {
+    // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+    // this.selectedUser=DUMMY_USERS[randomIndex];
+  //}
 }
 
 
