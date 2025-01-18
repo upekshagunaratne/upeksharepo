@@ -1,0 +1,16 @@
+import { Component, Input } from '@angular/core';
+import { DUMMY_USERS } from '../../data/users/dummy-users';
+import { NgFor } from '@angular/common';
+
+
+@Component({
+  selector: 'app-left-navbar-button',
+  standalone: true,
+  imports: [NgFor],
+  templateUrl: './left-navbar-button.component.html',
+  styleUrl: './left-navbar-button.component.css'
+})
+export class LeftNavbarButtonComponent {
+ users = DUMMY_USERS;
+  
+}
