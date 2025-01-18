@@ -1,6 +1,9 @@
-<div *ngFor="let user of users">
-    <img [src]="user.imagePath" alt="{{ user.name }}">
-    <p>{{ user.name }}</p>
-    <p>{{user.imagePath}}</p>
-  </div>
-  
+<div *ngFor="let user of users" class="user-container">
+  <button class="user-button" (click)="displayUserName(user.name)">
+      <img [src]="user.imagePath" alt="{{ user.name }}" class="user-image">
+      <span class="user-name">{{ user.name }}</span>
+  </button>
+  <div *ngIf="selectedUserName === user.name" class="name-box">
+    {{ selectedUserName }}
+</div>
+</div>
